@@ -1,3 +1,9 @@
+import { addDecorator } from '@storybook/react';
+import ReduxDecorator from './reduxDecorator'; // Import the ReduxDecorator
+
+// Apply the ReduxDecorator globally to all stories
+addDecorator(ReduxDecorator);
+
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
